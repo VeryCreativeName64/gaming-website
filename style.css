@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+    line-height: 1.6;
+    background-image: url("kepek/black.png");
+
+}
+
+#tarolo {
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'nav'
+    'main'
+    ;
+}
+header {
+    background-size: cover;
+    height: 300px;
+    grid-area: header;
+    
+}
+table, th, td {
+  border: 1px solid;
+}
+table {
+    width:100%;
+    border-collapse: collapse;
+}
+nav{
+    grid-area: nav;
+    background-color: rgb(37, 35, 35);
+}
+nav ul{
+    list-style: none;
+}
+
+nav li {
+    display: inline
+}
+nav a {
+    text-decoration: none;
+    color: beige;
+}
+.tartalom{
+    background-color: rgb(112, 101, 101);
+    display: grid;
+    color: beige;
+    grid-area: main;
+    grid-template-areas: 
+    'szoveg kep'
+    'footer footer';
+}
+
+.tartalom li{
+    list-style-position: inside;
+}
+article {
+    margin:0px;
+    font-size: 10px;
+    grid-area: szoveg;
+    
+}
+aside{
+   grid-area: kep;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(226, 153, 18);
+    text-align: center;
+}
